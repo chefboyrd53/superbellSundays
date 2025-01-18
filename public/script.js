@@ -1,9 +1,9 @@
 // Define the Mario Kart track list
 const marioKartTracks = [
-    { name: 'Mario Kart Stadium', image: '/assets/images/MKS.png' },
-    { name: 'Water Park', image: '/assets/images/WP.png' },
-    { name: 'Sweet Sweet Canyon', image: '/assets/images/SSC.png' },
-    { name: 'Thwomp Ruins', image: '/assets/images/TR.png'}
+    { name: 'Mario Kart Stadium', image: '/images/MKS.png' },
+    { name: 'Water Park', image: '/images/WP.png' },
+    { name: 'Sweet Sweet Canyon', image: '/images/SSC.png' },
+    { name: 'Thwomp Ruins', image: '/images/TR.png'}
   ];
   
   // Function to pick a random track
