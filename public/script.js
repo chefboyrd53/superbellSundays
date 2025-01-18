@@ -1,20 +1,9 @@
 // Define the Mario Kart track list
 const marioKartTracks = [
-    'Moo Moo Meadows',
-    'Rainbow Road',
-    'Toad Harbor',
-    'Mount Wario',
-    'Shy Guy Falls',
-    'DK Jungle',
-    'Bowser Castle',
-    'Mario Circuit',
-    'Sweet Sweet Canyon',
-    'Electrodrome',
-    'Wario Stadium',
-    'Cloudtop Cruise',
-    'Grumble Volcano',
-    'Cheep Cheep Beach',
-    'Mario Kart Stadium'
+    { name: 'Mario Kart Stadium', image: '/assets/images/MKS.png' },
+    { name: 'Water Park', image: '/assets/images/WP.png' },
+    { name: 'Sweet Sweet Canyon', image: '/assets/images/SSC.png' },
+    { name: 'Thwomp Ruins', image: '/assets/images/TR.png'}
   ];
   
   // Function to pick a random track
@@ -29,6 +18,11 @@ const marioKartTracks = [
   
   button.addEventListener('click', () => {
     const randomTrack = getRandomTrack();
-    selectedTrackElement.textContent = `Random Track: ${randomTrack}`;
+    selectedTrackElement.textContent = `Random Track: ${randomTrack.name}`;
+
+    //show track image
+    const trackImage = document.createElement('img');
+    trackImage.src = randomTrack.image;
+    selectedTrackElement.appendChild(trackImage);
   });
   
