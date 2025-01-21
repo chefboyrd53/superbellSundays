@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="style.css">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mario Kart Random Track Selector</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Push-Up Tracker</title>
 </head>
 <body>
-  <h1>Mario Kart Random Track Selector</h1>
-  <button id="choose-track-btn">Choose Random Track</button>
-  <p id="selected-track">No track selected yet!</p>
+    <h1>Daily Push-Up Tracker</h1>
+    <input type="number" id="pushup-count" placeholder="Number of push-ups" min="0">
+    <button id="submit-btn">Submit</button>
 
-  <script src="script.js"></script>
+    <div id="calendar" class="calendar"></div>
+
+    <script type="module" src="./script.js"></script>
 </body>
 </html>
